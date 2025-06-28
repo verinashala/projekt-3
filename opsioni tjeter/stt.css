@@ -1,0 +1,80 @@
+body {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+.carousel-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+    flex: 0 0 100%;
+}
+
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px 15px;
+    cursor: pointer;
+    z-index: 10;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.5rem;
+}
+
+.carousel-button.prev {
+    left: 10px;
+}
+
+.carousel-button.next {
+    right: 10px;
+}
+
+.carousel-button:hover {
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.invalid {
+    border-color: red;
+}
+
+.error-message {
+    color: red;
+    font-size: 0.875rem;
+    margin-top: 0.25rem;
+    display: none;
+}
+
+.error-message.hidden {
+    display: none;
+}
+
+.error-message:not(.hidden) {
+    display: block;
+}
+
+img {
+    transition: transform 0.3s ease;
+}
+
+img:hover {
+    transform: scale(1.05);
+}
+
+nav ul li a {
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ffd1dc;
+}
